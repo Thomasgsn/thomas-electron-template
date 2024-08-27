@@ -1,0 +1,72 @@
+@import './colors.css';
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital@0;1&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  #root {
+    @apply h-full;
+  }
+}
+
+* {
+  font-family: 'Epilogue', sans-serif;
+  @apply text-base font-[420] text-neutral-900 dark:text-neutral-100 transition-all duration-300;
+}
+
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply translate-y-[1px];
+}
+
+html,
+body {
+  @apply h-full select-none font-mono antialiased text-white overflow-hidden bg-bgLight;
+
+  &.dark {
+    @apply bg-bgDark;
+  }
+}
+
+header {
+  -webkit-app-region: drag;
+}
+
+button {
+  -webkit-app-region: no-drag;
+}
+
+.settings {
+  .setting {
+    @apply bg-gray-100 dark:bg-[#181a20] px-4 rounded-lg;
+
+    span {
+    }
+
+    button {
+      @apply dark:bg-btnDark border dark:border-btnBorderDark;
+    }
+  }
+}
+
+.versions__handle {
+  cursor: help;
+}
+
+.versions:hover {
+  display: block;
+  cursor: help;
+}
+
+.versions__handle:hover + .versions {
+  display: block;
+  cursor: help;
+}

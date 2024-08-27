@@ -1,0 +1,12 @@
+:root {
+    /* Light Color */
+    --bgLight: #fbfbfb;
+    --bgSidebarLight: #ffffff;
+  
+    /* Dark Color */
+    --bgDark: #0e1015;
+    --bgSidebarDark: #13151b;
+    --btnDark: #13151b;
+    --btnBorderDark: #272a30;
+  }
+  
